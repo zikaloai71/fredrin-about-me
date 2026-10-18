@@ -14,22 +14,17 @@ export const profile = {
     { label: "GitHub", href: "https://github.com/zikaloai71" },
     { label: "Medium", href: "https://medium.com/@zikaloai" },
   ],
+  newTabHint: "(opens in a new tab)",
   about: [
     "I have built production React and TypeScript apps for nearly 3 years, fully remote with a Dubai team. I also spent a year as a Business Analyst on the same products, writing the specs and acceptance criteria that developers built against. Today I build with AI coding agents every day, and I review every change before it ships.",
     "I am open to frontend and full-stack roles, remote or in Cairo. Email is the fastest way to reach me.",
   ],
   shipped: [
     {
-      title: "Donation Hub Back Office",
-      dates: "2024 – 2025",
+      title: "Donation Hub",
+      dates: "2024 – 2026",
       summary:
-        "Built the Back Office and a design editor that publishes each charity's layout as JSON. One codebase grew from 1 to 9 UAE charities, and onboarding went from weeks to days.",
-    },
-    {
-      title: "Agents feature, Donation Hub",
-      dates: "2025 – 2026",
-      summary:
-        "Coordinated delivery and contributed code. It drove over 1M AED in donations for Sharjah Charity.",
+        "Built the Back Office and a design editor that publishes each charity's layout as JSON. One codebase grew from 1 to 9 UAE charities, and onboarding went from weeks to days. Later, as a Business Analyst, I coordinated delivery of the Agents feature, which drove over 1M AED in donations for Sharjah Charity.",
     },
     {
       title: "Anna Coins",
@@ -37,12 +32,6 @@ export const profile = {
       href: "https://annacoins.shj.ae/",
       summary:
         "Led the Back Office dashboard, built a reusable component library and automated visitor reports with Google Analytics.",
-    },
-    {
-      title: "Feh-Zikrokm",
-      dates: "2026",
-      summary:
-        "Arabic-first admin panel for a Quran mentorship platform, built with Claude Code.",
     },
     {
       title: "InnovaTek website",
@@ -55,7 +44,8 @@ export const profile = {
     {
       role: "Frontend Developer, Freelance",
       dates: "Jul 2026 – Present",
-      summary: "Building the Feh-Zikrokm admin panel in React and TypeScript.",
+      summary:
+        "Building the Feh-Zikrokm admin panel in React and TypeScript. Now in testing.",
     },
     {
       role: "Business Analyst, InnovaTek SWD (remote, Dubai)",

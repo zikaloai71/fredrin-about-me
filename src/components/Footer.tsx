@@ -1,5 +1,6 @@
 import { cacheLife } from "next/cache";
 import { profile } from "@/content/profile";
+import ExternalLink from "./ExternalLink";
 
 export default async function Footer() {
   "use cache";
@@ -10,12 +11,12 @@ export default async function Footer() {
       <span>
         © {new Date().getFullYear()} {profile.name}
       </span>
-      <a
+      <ExternalLink
         href={profile.source.href}
         className="text-accent underline underline-offset-3"
       >
         {profile.source.label}
-      </a>
+      </ExternalLink>
     </footer>
   );
 }

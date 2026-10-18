@@ -1,3 +1,5 @@
+import ExternalLink from "./ExternalLink";
+
 export default function Entry({
   title,
   dates,
@@ -13,12 +15,12 @@ export default function Entry({
     <li className="border-t border-line py-[18px] last:border-b">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4">
         {href ? (
-          <a
+          <ExternalLink
             href={href}
             className="font-semibold text-accent underline underline-offset-3"
           >
             {title}
-          </a>
+          </ExternalLink>
         ) : (
           <span className="font-semibold">{title}</span>
         )}
