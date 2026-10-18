@@ -1,4 +1,5 @@
 import { profile } from "@/content/profile";
+import ExternalLink from "./ExternalLink";
 
 export default function ContactLinks() {
   return (
@@ -12,12 +13,12 @@ export default function ContactLinks() {
       <ul className="flex flex-wrap gap-4 text-[15px]">
         {profile.links.map((link) => (
           <li key={link.href}>
-            <a
+            <ExternalLink
               href={link.href}
               className="text-accent underline underline-offset-3"
             >
               {link.label}
-            </a>
+            </ExternalLink>
           </li>
         ))}
       </ul>

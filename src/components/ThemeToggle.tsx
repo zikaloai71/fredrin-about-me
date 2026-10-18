@@ -23,12 +23,15 @@ export default function ThemeToggle() {
     }
   }
 
+  const label = dark ? "Switch to light mode" : "Switch to dark mode";
+
   return (
     <button
       type="button"
       onClick={toggle}
-      aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
-      className="grid size-9 place-items-center rounded-lg border border-line"
+      aria-label={label}
+      title={label}
+      className="grid size-9 cursor-pointer place-items-center rounded-lg border border-line hover:bg-line motion-safe:transition-colors"
     >
       {/* Icons follow the html class, so they are right before hydration. */}
       <svg
