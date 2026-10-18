@@ -5,7 +5,7 @@ export default function ContactLinks() {
     <div className="mt-7 flex flex-wrap items-center gap-5">
       <a
         href={profile.email.href}
-        className="rounded-lg bg-accent px-[18px] py-2.5 text-[15px] font-medium text-accent-fg hover:opacity-90 motion-safe:transition-opacity"
+        className="rounded-lg bg-accent px-[18px] py-2.5 text-[15px] font-medium text-accent-fg hover:brightness-90 motion-safe:transition-[filter]"
       >
         {profile.email.label}
       </a>
