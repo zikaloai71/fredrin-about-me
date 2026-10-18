@@ -2,16 +2,18 @@ import { profile } from "@/content/profile";
 import Section from "@/components/Section";
 
 export default function BuildNotes() {
-  // Hidden until profile.buildNotes has real content.
-  if (profile.buildNotes.length === 0) return null;
+  const { intro, points } = profile.buildNotes;
+  // Hidden if the build notes are ever removed.
+  if (points.length === 0) return null;
 
   return (
     <Section id="build-notes" title={profile.headings.buildNotes}>
-      <div className="space-y-3.5">
-        {profile.buildNotes.map((note) => (
-          <p key={note}>{note}</p>
+      <p>{intro}</p>
+      <ul className="mt-3.5 list-disc space-y-2 pl-5">
+        {points.map((point) => (
+          <li key={point}>{point}</li>
         ))}
-      </div>
+      </ul>
     </Section>
   );
 }

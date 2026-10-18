@@ -83,6 +83,17 @@ export const profile = {
     contact: "Contact",
   },
   contact: "The best way to reach me is email.",
-  // TODO: Zakaria will write "How this page was built" from real build notes.
-  buildNotes: [] as string[],
+  buildNotes: {
+    intro: "I built this page with Fredrin.",
+    points: [
+      'I wrote the Project Context first: stack, file layout and rules, such as "never invent facts". Before any code, the agent asked me two questions: who the page is for, and how it should look.',
+      "One ticket built the page. Then four tickets ran at the same time, each in its own worktree: SEO, CI, an accessibility and performance pass, and deploy prep.",
+      "The last ticket to merge hit a conflict, and I resolved it by hand.",
+      "Fredrin's Vercel integration needs a Vercel Pro or Enterprise plan, so I deployed on Vercel by hand and sent the deploy ticket back to fix its README.",
+    ],
+  },
+  source: {
+    label: "Source code",
+    href: "https://github.com/zikaloai71/fredrin-about-me",
+  },
 };

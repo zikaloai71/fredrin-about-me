@@ -6,8 +6,16 @@ export default async function Footer() {
   cacheLife("days");
 
   return (
-    <footer className="mt-18 text-sm text-muted">
-      © {new Date().getFullYear()} {profile.name}
+    <footer className="mt-18 flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted">
+      <span>
+        © {new Date().getFullYear()} {profile.name}
+      </span>
+      <a
+        href={profile.source.href}
+        className="text-accent underline underline-offset-3"
+      >
+        {profile.source.label}
+      </a>
     </footer>
   );
 }
