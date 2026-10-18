@@ -1,10 +1,29 @@
 import type { Metadata } from "next";
+import PersonJsonLd from "@/components/PersonJsonLd";
 import { profile } from "@/content/profile";
+import { siteUrl } from "@/content/site";
 import "./globals.css";
 
+const title = `${profile.name}, ${profile.jobTitle}`;
+
 export const metadata: Metadata = {
-  title: profile.name,
+  metadataBase: new URL(siteUrl),
+  title,
   description: profile.hero,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "profile",
+    url: "/",
+    siteName: profile.name,
+    locale: "en_US",
+    title,
+    description: profile.hero,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: profile.hero,
+  },
 };
 
 // Runs before paint: stored choice wins, else the system theme. No flash.
@@ -20,7 +39,10 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <PersonJsonLd />
+      </body>
     </html>
   );
 }
