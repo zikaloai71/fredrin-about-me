@@ -1,6 +1,9 @@
 export const profile = {
   name: "Zakaria Loai",
   role: "Frontend engineer, React and TypeScript. Cairo, Egypt.",
+  // SEO fields: page title, Open Graph and Person JSON-LD.
+  jobTitle: "Frontend engineer",
+  location: { locality: "Cairo", country: "Egypt" },
   hero: "I build data-rich web apps in React and TypeScript, and I write the specs that make them clear.",
   email: {
     label: "Email me",
