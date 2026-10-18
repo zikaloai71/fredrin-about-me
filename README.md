@@ -23,14 +23,17 @@ npm run build
 
 The site deploys to Vercel with zero configuration. There is no `vercel.json` and no required environment variable.
 
-### Link the repo (one time)
+The Fredrin Vercel integration needs Vercel Pro or Enterprise. This project is on the free plan, so it is deployed by hand from the Vercel dashboard.
 
-1. In Fredrin, open this project's Vercel app.
-2. Link the `fredrin-about-me` GitHub repository.
+### Import the repo (one time)
+
+1. In the Vercel dashboard, choose **Add New** then **Project**.
+2. Import the `fredrin-about-me` GitHub repository.
 3. Keep the Vercel defaults: framework preset Next.js, default build command (`next build`) and default output directory.
 4. Do not add environment variables. None are needed.
+5. Click **Deploy**.
 
-### What happens after linking
+### What happens after import
 
 - Every push to a branch other than `main` builds a preview deployment with its own URL. The URL shows up on the pull request.
 - Every merge to `main` builds and deploys production.
